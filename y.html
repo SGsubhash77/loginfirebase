@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>HTML login form</title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-firestore.js"></script>
+<script> 
+  var firebaseConfig = {
+    apiKey: "AIzaSyAhXZNLZabWDk8X1Vs2k8XOmusxHk12muY",
+    authDomain: "sgsg-17d69.firebaseapp.com",
+    databaseURL: "https://sgsg-17d69.firebaseio.com",
+    projectId: "sgsg-17d69",
+    storageBucket: "sgsg-17d69.appspot.com",
+    messagingSenderId: "937588386557",
+    appId: "1:937588386557:web:739126363860e4fdaaac94"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="sg.js">
+    </script>
+  </head>
+  <body>
+<div id="logindiv"class="form-container" style="display: none;">
+   <div class="user-ing"></div>
+     <ul class="list">
+        <li><h2>Member login</h2></li>
+        <li> <input type="text" id="user name" placeholder="user name"</li>
+        <li><input type="Password" id="Password" placeholder=".............." ></li>
+        <li> <input onclick="loginData()" type="button" name="Submit" value="Submit"></li>
+        <li>Forget Password?</li>
+     </ul>
+
+</div>
+<div id="logoutdiv"style="display: none;"><center>
+  <button style="width: 500px;height: 150px;line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;" onclick="logout()">
+    logout
+  </button>
+  </center>
+</div>
+</body>
+</html>
